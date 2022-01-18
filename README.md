@@ -3,10 +3,29 @@
 To install all dependencies use: <br>
 
 ```ts
-`yarn` or `npm install`
+  `yarn` or `npm install`
 ```
 ---
 
 To runner the application use:
 ```ts
-`yarn dev` or `npm run dev`
+  `yarn dev` or `npm run dev`
+```
+---
+
+
+To **create** docker image:
+```docker
+  docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+```
+
+  for **start** image, use:
+  ```docker
+    docker start <container-name>
+  ```
+  ---
+  for **stop** image, use:
+  ```docker
+    docker stop <container-name>
+```
+---
